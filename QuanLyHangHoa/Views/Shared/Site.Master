@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+        <%="Quản trị" %></title>
+    <link href="/Content/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/redmond/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/bootstrap-4.6.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="TemPlateContainer" runat="server">
+        <%--<div id="popup_confirm">
+            <div class="wrap p-15">
+                <div class="row bg-info" style="border-radius:5px 5px 0 0;">
+                    <div class="col-md-12">
+                        <span class="text-white font-weight-bold">Confirm Delete</span>
+                    </div>
+                </div>
+                <div style="margin: 15px 0 15px 0;">
+                    <div class="col-md-12">Are you sure you want to delete?</div>
+                </div>
+                <div class="row" style="margin: 15px 0 5px 0;border-top:1px solid">
+                    <div class="col-md-6 mt-1"><a href="/Home/confirm" class="btn btn-success">Confirm</a></div>
+                    <div class="col-md-6 mt-1"><a id="close" href="#" class="btn btn-dark">Cancel</a></div>
+                </div>
+            </div>
+        </div>--%>
+
+        <div id="wrapper">
+            <div id="header">
+                <div id="banner">
+                    <ul id="pages">
+                        <%if (HttpContext.Current.User.Identity.IsAuthenticated)
+                          {%>
+                        <li><a href="#"><%=HttpContext.Current.User.Identity.Name%></a></li>
+                        <li><a href="/Account/LogOff">Logout</a></li>
+                        <%}%>
+                    </ul>
+                </div>
+                <!--End #banner-->
+
+                <div id="mainNav">
+                    <ul>
+                        <li>
+                            <a href="/">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Mặt Hàng</a>
+                            <ul>
+                                <li><a href="/HangHoa">Quản lý mặt hàng </a></li>
+                                <li><a href="/NhapHang">Quản lý nhập hàng</a></li>
+                                <li><a href="/XuatHang">Quản lý xuất hàng</a></li>
+                            </ul>
+                        </li>
+                        <%--  <%if (!HttpContext.Current.User.Identity.IsAuthenticated)
+                          {%>
+                        <li>
+                            <a href="/Account/LogOn">Người dùng</a>
+                            <ul>
+                                <li><a href="/Account/LogOn">Đăng nhập tài khoản</a></li>
+                            </ul>
+                        </li>
+                        <% } %>--%>
+                        <li>
+                            <a href="/KhachHang">Khách hàng </a>
+                        </li>
+                        <li>
+                            <a href="/CongTy">Công Ty</a>
+                        </li>
+                        <li>
+                            <a href="/QuocGia">Quốc gia</a>
+                        </li>
+                          <%--<li>
+                            <a href="#">Báo cáo </a>
+                            <ul>
+                                <li><a href="#">Thống kê cá nhân </a></li>
+                                <li><a href="#">Đơn vị thống kê hàng ngày </a></li>
+                                <li><a href="#">Đơn vị thống kê theo tháng </a></li>
+                            </ul>
+                        </li>--%>
+                    </ul>
+                </div>
+                <!--End #mainNav-->
+            </div>
+            <!--End #header-->
+
+            <div id="mainContent">
+                <div class="container" style="width: 100%; min-width: 800px; padding: 10px; /*float: left*/">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <!--End .boxesContent-->
+            </div>
+            <!--End #mainContent-->
+
+            <div id="footer">
+                <div class="m-5">
+                    <p class="author" style="right: 680px">Bản quyền thuộc Lại Đạt</p>
+                    <p class="copyright">Copyright 2021</p>
+                </div>
+            </div>
+            <!--End #footer-->
+        </div>
+        <!--End #wrapper-->
+    </div>
+    <%--<% Html.RenderPartial("Messages", ViewData["Messages"]); %>--%>
+
+</body>
+    <%--<script src="~/Scripts/jquery-1.7.1.min.js"></script>--%>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    
+</html>
+
+

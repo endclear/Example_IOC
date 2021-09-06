@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Core.Entity.KhachHang, Core" table="KhachHang" >
+    <id name="id" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="Hoten" column="Hoten" type="string" length="50" />
+    <property name="Gioitinh" column="Gioitinh" type="string" length="8" />
+    <property name="Ngaysinh" column="Ngaysinh" type="DateTime" />
+    <property name="Dienthoai" column="Dienthoai" type="string" length="12" />
+    <property name="Email" column="Email" type="string" length="50" />
+    <property name="Diachi" column="DiaChi" type="string" length="100" />
+    <property name="Congtyid" column="Congtyid" type="int" />
+    <property name="Socmt" column="Socmt" type="int" />
+    <property name="Ngaycap" column="Ngaycap" type="DateTime" />
+    <property name="Noicap" column="Noicap" type="string" length="100" />
+  </class>
+
+</hibernate-mapping>

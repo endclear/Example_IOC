@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Core.Entity.CongTy, Core" table="CongTy" >
+    <id name="id" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="TenCongTy" column="TenCongTy" type="string" length="50" />
+    <property name="DienThoai" column="DienThoai" type="string" length="12" />
+    <property name="Website" column="Website" type="string" length="150" />
+    <property name="Email" column="Email" type="string" length="50"/>
+    <property name="MaSoThue" column="MaSoThue" type="string" length="50"/>
+    <property name="DiaChi" column="DiaChi" type="string" length="100"/>
+    <property name="OrderNumber" column="OrderNumber" type="int"/>
+  </class>
+
+</hibernate-mapping>

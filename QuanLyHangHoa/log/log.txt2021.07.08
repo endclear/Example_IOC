@@ -1,0 +1,21 @@
+2021-07-08 22:36:04,546 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.id as id4_0_, this_.Maphieunhap as Maphieun2_4_0_, this_.Tenphieunhap as Tenphieu3_4_0_, this_.Mota as Mota4_0_, this_.Xuatxuid as Xuatxuid4_0_ FROM Phieunhap this_ 
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Xuatxuid'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:a991ad2c-c430-49f9-9b56-a3915e0044a8
+Error Number:207,State:1,Class:16
+2021-07-08 22:36:04,611 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'Xuatxuid'. 
+2021-07-08 22:36:04,667 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'Xuatxuid'. 
+2021-07-08 22:36:04,668 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'Xuatxuid'. 

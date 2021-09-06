@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Core.Entity.HangHoa, Core" table="hanghoa" >
+    <id name="id" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="Mahang" column="Mahang" type="string" length="20" />
+    <property name="Tenhang" column="Tenhang" type="string" length="200" />
+    <property name="Mota" column="Mota" type="string" length="200" />
+    <property name="Xuatxuid" column="Xuatxuid" type="int" />
+    <property name="Ordernumber" column="Ordernumber" type="int" />
+  </class>
+
+</hibernate-mapping>

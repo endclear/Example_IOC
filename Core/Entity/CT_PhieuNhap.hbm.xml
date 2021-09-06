@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Core.Entity.CT_PhieuNhap, Core" table="phieunhap_hanghoa" >
+    <id name="id" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="PhieunhapId" column="PhieunhapId" type="int" />
+    <property name="HanghoaId" column="HanghoaId" type="int" />
+    <property name="Ngaynhap" column="NgayNhap" type="DateTime" />
+    <property name="Soluong" column="Soluong" type="int" />
+    <property name="Gianhap" column="Gianhap" type="decimal" />
+    <property name="Ghichu" column="Ghichu" type="string" length="100" />
+
+  </class>
+</hibernate-mapping>

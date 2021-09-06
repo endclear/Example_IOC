@@ -1,0 +1,54 @@
+2021-07-02 15:17:16,039 ERROR NHibernate.Util.ReflectHelper - Could not load type Core.Entity.Quocgia, Core. 
+System.TypeLoadException: Could not load type 'Core.Entity.Quocgia' from assembly 'Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2021-07-02 15:17:16,120 ERROR NHibernate.Cfg.Configuration - Could not compile the mapping document: Core.Entity.QuocGia.hbm.xml 
+NHibernate.MappingException: Could not compile the mapping document: Core.Entity.QuocGia.hbm.xml ---> NHibernate.MappingException: persistent class Core.Entity.Quocgia, Core not found ---> System.TypeLoadException: Could not load type 'Core.Entity.Quocgia' from assembly 'Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.ClassForName(String name)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForNameChecked(String name, Mappings mappings, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2021-07-02 15:17:16,223 ERROR NHibernate.Cfg.Configuration - Problem parsing configuration 
+NHibernate.MappingException: Could not compile the mapping document: Core.Entity.QuocGia.hbm.xml ---> NHibernate.MappingException: persistent class Core.Entity.Quocgia, Core not found ---> System.TypeLoadException: Could not load type 'Core.Entity.Quocgia' from assembly 'Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.ClassForName(String name)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForNameChecked(String name, Mappings mappings, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   at NHibernate.Cfg.Configuration.AddValidatedDocument(NamedXmlDocument doc)
+   at NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   at NHibernate.Cfg.Configuration.AddDocumentThroughQueue(NamedXmlDocument document)
+   at NHibernate.Cfg.Configuration.AddXmlReader(XmlReader hbmReader, String name)
+   at NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   at NHibernate.Cfg.Configuration.AddResource(String path, Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   at NHibernate.Cfg.Configuration.DoConfigure(ISessionFactoryConfiguration factoryConfiguration)
+   at NHibernate.Cfg.Configuration.Configure(XmlReader textReader)

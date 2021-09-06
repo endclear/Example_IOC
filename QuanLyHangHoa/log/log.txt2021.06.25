@@ -1,0 +1,42 @@
+2021-06-25 17:11:25,588 ERROR QuanLyHangHoa.Bootstrapper - Error initializing application. 
+Castle.Windsor.Configuration.Interpreters.XmlProcessor.ConfigurationProcessingException: Error processing include node: file://Config/facilities.config ---> Castle.Core.Resource.ResourceException: File c:\users\hp\documents\visual studio 2012\Projects\QuanLyHangHoa\QuanLyHangHoa\Config\facilities.config could not be found
+   at Castle.Core.Resource.FileResource.CheckFileExists(String path)
+   at Castle.Core.Resource.FileResource.CreateStreamFromPath(String resourcePath, String rootPath)
+   at Castle.Core.Resource.FileResource.CreateStreamFromUri(CustomUri resource, String rootPath)
+   at Castle.Core.Resource.FileResource.<>c__DisplayClass6.<.ctor>b__4()
+   at Castle.Core.Resource.AbstractStreamResource.GetStreamReader()
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.IncludeElementProcessor.ProcessInclude(XmlElement element, String includeUri, IXmlProcessorEngine engine)
+   --- End of inner exception stack trace ---
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.IncludeElementProcessor.ProcessInclude(XmlElement element, String includeUri, IXmlProcessorEngine engine)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.IncludeElementProcessor.Process(IXmlProcessorNodeList nodeList, IXmlProcessorEngine engine)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessCurrent(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessAll(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.DefaultElementProcessor.Process(IXmlProcessorNodeList nodeList, IXmlProcessorEngine engine)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessCurrent(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessAll(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.XmlProcessor.Process(XmlNode node)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.XmlProcessor.Process(IResource resource)
+   at Castle.Windsor.Configuration.Interpreters.XmlInterpreter.ProcessResource(IResource source, IConfigurationStore store)
+   at Castle.Windsor.WindsorContainer..ctor(IConfigurationInterpreter interpreter)
+   at QuanLyHangHoa.Bootstrapper.InitializeContainer() in c:\Users\HP\Documents\Visual Studio 2012\Projects\QuanLyHangHoa\QuanLyHangHoa\Bootstrapper.cs:line 23
+2021-06-25 17:12:34,027 ERROR QuanLyHangHoa.Bootstrapper - Error initializing application. 
+Castle.Windsor.Configuration.Interpreters.XmlProcessor.ConfigurationProcessingException: Error processing include node: file://Config/facilities.config ---> Castle.Core.Resource.ResourceException: File c:\users\hp\documents\visual studio 2012\Projects\QuanLyHangHoa\QuanLyHangHoa\Config\facilities.config could not be found
+   at Castle.Core.Resource.FileResource.CheckFileExists(String path)
+   at Castle.Core.Resource.FileResource.CreateStreamFromPath(String resourcePath, String rootPath)
+   at Castle.Core.Resource.FileResource.CreateStreamFromUri(CustomUri resource, String rootPath)
+   at Castle.Core.Resource.FileResource.<>c__DisplayClass6.<.ctor>b__4()
+   at Castle.Core.Resource.AbstractStreamResource.GetStreamReader()
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.IncludeElementProcessor.ProcessInclude(XmlElement element, String includeUri, IXmlProcessorEngine engine)
+   --- End of inner exception stack trace ---
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.IncludeElementProcessor.ProcessInclude(XmlElement element, String includeUri, IXmlProcessorEngine engine)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.IncludeElementProcessor.Process(IXmlProcessorNodeList nodeList, IXmlProcessorEngine engine)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessCurrent(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessAll(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.ElementProcessors.DefaultElementProcessor.Process(IXmlProcessorNodeList nodeList, IXmlProcessorEngine engine)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessCurrent(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.DefaultXmlProcessorEngine.DispatchProcessAll(IXmlProcessorNodeList nodeList)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.XmlProcessor.Process(XmlNode node)
+   at Castle.Windsor.Configuration.Interpreters.XmlProcessor.XmlProcessor.Process(IResource resource)
+   at Castle.Windsor.Configuration.Interpreters.XmlInterpreter.ProcessResource(IResource source, IConfigurationStore store)
+   at Castle.Windsor.WindsorContainer..ctor(IConfigurationInterpreter interpreter)
+   at QuanLyHangHoa.Bootstrapper.InitializeContainer() in c:\Users\HP\Documents\Visual Studio 2012\Projects\QuanLyHangHoa\QuanLyHangHoa\Bootstrapper.cs:line 23
